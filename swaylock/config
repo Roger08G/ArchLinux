@@ -1,0 +1,73 @@
+###############################################################
+# 🔒 SWAYLOCK CONFIGURACIÓN
+# Autor: Tu setup Hyprland
+# Tema: Nord con blur y animación tipo macOS
+###############################################################
+
+# ───────────────────────────────
+# 🧭 General
+# ───────────────────────────────
+ignore-empty-password
+show-failed-attempts
+clock
+indicator
+indicator-radius=140
+indicator-thickness=12
+indicator-caps-lock
+indicator-y-position=0
+font=Cascadia Code
+screenshots
+fade-in=0.2
+grace=2
+
+ignore-empty-password
+show-failed-attempts
+indicator-idle-visible no
+indicator-radius 120
+indicator-thickness 12
+clock
+font=Cascadia Code
+color=1E1E2E
+screenshots
+effect-blur=15x10
+fade-in=0.2
+
+# ───────────────────────────────
+# 🎨 Colores (tema Nord)
+# ───────────────────────────────
+inside-color=2E3440FF
+ring-color=88C0D0FF
+text-color=ECEFF4FF
+key-hl-color=81A1C1FF
+bs-hl-color=BF616AFF
+separator-color=00000000
+wrong-color=BF616AFF
+ver-color=88C0D0FF
+
+# ───────────────────────────────
+# 🌫️ Blur de fondo
+# ───────────────────────────────
+effect-blur=15x10
+effect-vignette=0.3:0.3
+
+# ───────────────────────────────
+# 🕒 Reloj (opcional)
+# ───────────────────────────────
+clock
+datestr=%A %d %B
+timestr=%H:%M
+text-alignment=center
+
+# ───────────────────────────────
+# 🔊 Feedback visual
+# ───────────────────────────────
+indicator-idle-visible=no
+indicator-wrong-visible=yes
+indicator-caps-lock-visible=yes
+
+###############################################################
+# 💡 NOTAS:
+# - Bloqueo manual: swaylock -f
+# - Bloqueo automático: usa swayidle (ver abajo)
+# - Cierra sesión con $mod+L o desde Wlogout
+###############################################################

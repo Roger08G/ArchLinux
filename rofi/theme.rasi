@@ -1,0 +1,119 @@
+/**
+ * ───────────────────────────────────────────────
+ *  🎨 Tema visual de Rofi (Nord)
+ *  Inspirado en tu zip y adaptado al estilo Hyprland
+ * ───────────────────────────────────────────────
+ */
+
+* {
+  background: #2e3440FF;     /* Fondo general */
+  background-alt: #3b4252FF; /* Fondo alternativo */
+  foreground: #eceff4FF;     /* Texto principal */
+  selected:   #88c0d0FF;     /* Elemento seleccionado */
+  active:     #a3be8cFF;     /* Color activo */
+  urgent:     #bf616aFF;     /* Color urgente */
+}
+
+/* ───────────────────────────────
+   🌃 Ventana principal
+   ─────────────────────────────── */
+window {
+  transparency: "real";
+  border: 2px;
+  border-color: @selected;
+  border-radius: 16px;
+  padding: 20px;
+  background-color: @background;
+}
+
+/* ───────────────────────────────
+   🧭 Lista de aplicaciones
+   ─────────────────────────────── */
+listview {
+  lines: 12;                 /* Número de filas visibles */
+  columns: 1;
+  padding: 8px;
+  scrollbar: true;
+  border-radius: 12px;
+}
+
+/* Elementos (cada app) */
+element {
+  padding: 8px 12px;
+  border-radius: 10px;
+  background-color: transparent;
+  text-color: @foreground;
+}
+
+/* Elemento seleccionado */
+element selected {
+  background-color: @selected;
+  text-color: #2e3440;
+  font-weight: bold;
+}
+
+/* Hover */
+element:hover {
+  background-color: mix(@selected, @background, 0.3);
+}
+
+/* ───────────────────────────────
+   🔍 Barra de entrada (búsqueda)
+   ─────────────────────────────── */
+inputbar {
+  margin: 8px 0;
+  border-radius: 10px;
+  padding: 10px;
+  background-color: @background-alt;
+  text-color: @foreground;
+  font-size: 13px;
+}
+
+/* Prompt (icono de búsqueda) */
+prompt {
+  text-color: @selected;
+  font-weight: bold;
+}
+
+/* Texto del usuario */
+entry {
+  placeholder: "Buscar...";
+  expand: true;
+}
+
+/* ───────────────────────────────
+   🔖 Botones de modo (drun, run, window)
+   ─────────────────────────────── */
+mode-switcher {
+  border: 0;
+  spacing: 10px;
+  margin: 8px 0;
+}
+
+button {
+  border-radius: 8px;
+  padding: 6px 12px;
+  background-color: @background-alt;
+  text-color: @foreground;
+  transition: 0.2s;
+}
+
+button selected {
+  background-color: @selected;
+  text-color: #2e3440;
+}
+
+/* ───────────────────────────────
+   🪄 Scrollbar y tooltip
+   ─────────────────────────────── */
+scrollbar {
+  handle-color: @selected;
+  handle-width: 6px;
+}
+
+tooltip {
+  background-color: @background-alt;
+  border-radius: 8px;
+  border: 1px solid @selected;
+  padding: 6px 10px;
+}

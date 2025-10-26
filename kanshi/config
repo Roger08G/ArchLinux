@@ -1,0 +1,28 @@
+###############################################################
+# 🧰 KANSHI CONFIGURACIÓN
+# Autor: Tu setup Hyprland
+# Función: perfiles automáticos para pantallas
+###############################################################
+
+# Perfil cuando estás en tu laptop sin pantallas externas
+profile laptop {
+    output eDP-1 enable mode 1920x1080@60Hz position 0,0 scale 1
+}
+
+# Perfil cuando conectas un monitor externo HDMI
+profile home {
+    output eDP-1 enable mode 1920x1080@60Hz position 2560,0 scale 1
+    output HDMI-A-1 enable mode 2560x1440@75Hz position 0,0 scale 1
+}
+
+# Perfil para oficina (por ejemplo DisplayPort)
+profile office {
+    output eDP-1 disable
+    output DP-1 enable mode 3440x1440@100Hz position 0,0 scale 1
+}
+###############################################################
+# 💡 NOTAS:
+# - Para ver los nombres reales de tus monitores:
+#     hyprctl monitors
+# - Kanshi detecta automáticamente y aplica el perfil adecuado.
+###############################################################

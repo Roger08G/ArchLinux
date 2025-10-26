@@ -1,0 +1,19 @@
+/**
+ * ───────────────────────────────────────────────
+ *  🧭 Rofi Configuración principal
+ *  Autor: Tu setup Hyprland
+ *  Tema: Nord - limpio y minimalista
+ * ───────────────────────────────────────────────
+ */
+
+configuration {
+  modi: "drun,run,window";         // Módulos disponibles: drun = apps, run = comandos, window = cambiar ventana
+  show-icons: true;                // Mostrar iconos de .desktop
+  display-drun: "  Apps";         // Etiqueta en modo drun
+  display-run: "  Run";           // Etiqueta en modo run
+  display-window: "  Window";     // Etiqueta en modo window
+  drun-display-format: "{icon} {name}";  // Formato de cada ítem
+  font: "JetBrainsMono Nerd Font 12";    // Fuente global
+  theme: "~/.config/rofi/theme.rasi";    // Ruta al tema visual
+  icon-theme: "Papirus-Dark";            // Tema de iconos GTK
+}

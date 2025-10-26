@@ -1,0 +1,45 @@
+/* ───────────────────────────────────────────────
+   🧱 Wlogout Style.css
+   Tema: Nord macOS-like
+   ─────────────────────────────────────────────── */
+
+window {
+	background-color: rgba(46, 52, 64, 0.6);
+	backdrop-filter: blur(20px);
+	border-radius: 20px;
+}
+
+button {
+	color: #eceff4;
+	background-color: rgba(67, 76, 94, 0.5);
+	border: 1px solid #81a1c1;
+	border-radius: 20px;
+	margin: 20px;
+	padding: 30px 40px;
+	font-family: "Cascadia Code Nerd Font";
+	font-size: 16px;
+	transition: all 0.2s ease-in-out;
+}
+
+button:hover {
+	background-color: #88c0d0;
+	color: #2e3440;
+	border-color: #88c0d0;
+	transform: scale(1.05);
+}
+
+#lock {
+	color: #81a1c1;
+}
+
+#logout {
+	color: #a3be8c;
+}
+
+#reboot {
+	color: #ebcb8b;
+}
+
+#shutdown {
+	color: #bf616a;
+}

@@ -1,0 +1,118 @@
+/* ──────────────────────────────────────────────
+   🎨 Waybar Style.css
+   Tema: Nord (inspirado en tu ZIP)
+   ────────────────────────────────────────────── */
+
+/* Fuente global */
+* {
+	font-family: "JetBrainsMono Nerd Font", "FiraCode Nerd Font", monospace;
+	font-size: 12px;
+	font-weight: 500;
+}
+
+/* Barra principal */
+window#waybar {
+	background: rgba(46, 52, 64, 0.85);
+	/* Fondo semitransparente */
+	color: #eceff4;
+	/* Color texto */
+	border-bottom: 1px solid #3b4252;
+	/* Línea inferior */
+	backdrop-filter: blur(8px);
+	/* Desenfoque de fondo */
+}
+
+/* Workspaces */
+#workspaces button {
+	color: #d8dee9;
+	background: transparent;
+	padding: 0 8px;
+	margin: 3px 3px;
+	border-radius: 10px;
+	border: 1px solid transparent;
+	transition: all 0.2s ease-in-out;
+}
+
+#workspaces button.active {
+	background: #88c0d0;
+	/* Azul Nord */
+	color: #2e3440;
+	border-color: #88c0d0;
+	font-weight: bold;
+}
+
+#workspaces button:hover {
+	border-color: #81a1c1;
+}
+
+/* Módulos generales (bloques redondeados) */
+#clock,
+#cpu,
+#memory,
+#network,
+#pulseaudio,
+#backlight,
+#battery,
+#tray,
+#custom-vscode,
+#custom-spotify,
+#custom-whatsapp {
+	background: rgba(67, 76, 94, 0.4);
+	border-radius: 10px;
+	padding: 4px 10px;
+	margin: 0 4px;
+	transition: background 0.2s ease-in-out;
+}
+
+/* Hover visual */
+#clock:hover,
+#cpu:hover,
+#memory:hover,
+#custom-vscode:hover,
+#custom-spotify:hover,
+#custom-whatsapp:hover {
+	background: rgba(136, 192, 208, 0.6);
+	color: #2e3440;
+}
+
+/* Iconos personalizados */
+#custom-vscode {
+	color: #88c0d0;
+}
+
+#custom-spotify {
+	color: #1db954;
+}
+
+#custom-whatsapp {
+	color: #25D366;
+}
+
+/* Indicadores de batería */
+#battery.warning {
+	color: #ebcb8b;
+}
+
+#battery.critical {
+	color: #bf616a;
+	animation: blink 1s ease-in-out infinite alternate;
+}
+
+@keyframes blink {
+	from {
+		opacity: 1;
+	}
+
+	to {
+		opacity: 0.4;
+	}
+}
+
+/* Tooltip */
+tooltip {
+	background: #3b4252;
+	color: #eceff4;
+	border-radius: 8px;
+	border: 1px solid #88c0d0;
+	padding: 5px 10px;
+}

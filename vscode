@@ -1,0 +1,94 @@
+{
+	"window.zoomLevel": 1.84,
+	"editor.cursorBlinking": "expand",
+	"editor.scrollbar.vertical": "visible",
+	"breadcrumbs.filePath": "off",
+	"editor.glyphMargin": false,
+	"workbench.sideBar.location": "right",
+	"workbench.statusBar.visible": false,
+	"editor.scrollbar.verticalScrollbarSize": 0,
+	"editor.fontFamily": "Cascadia Code",
+	"editor.fontLigatures": true,
+	"workbench.colorTheme": "Dracula Theme",
+	"workbench.iconTheme": "material-icon-theme",
+	"workbench.productIconTheme": "fluent-icons",
+	"editor.minimap.showSlider": "always",
+	"editor.minimap.size": "fit",
+	"editor.minimap.enabled": false,
+	"editor.stickyScroll.enabled": false,
+	"glassit.alpha": 245,
+	"material-icon-theme.files.associations": {
+		"*.data.js": "database",
+		"*.data.json": "database",
+		"*.model.js": "mjml",
+		"*.service.js": "credits",
+		"*.dataset.csv": "craco",
+		"*.finetune.jsonl": "craco",
+		"*.js": "svgr",
+		"index.js": "test-js",
+		"*.middleware.js": "redux-action",
+		"*.helper.js": "redux-store",
+		".vscode": "vscode",
+		"conf.git.md": "git",
+		"*.function.js": "redux-reducer",
+		"*.dataset.es.csv": "craco"
+	},
+	"material-icon-theme.folders.associations": {
+		"datasets-models": "class",
+		"datasets": "meta",
+		"functions": "app",
+		"services": "seeders",
+		"system": "mappings",
+		"componentes": "components",
+		"v1": "folder",
+		"v2": "folder",
+		"help": "public",
+		"bugbounty": "public",
+		"www-temporal": "public",
+		"server-temporal": "server"
+	},
+	"material-icon-theme.files.customClones": [
+		{
+			"name": "GLOBAL_DATABASE.sql",
+			"base": "database",
+			"color": "light-green-800",
+			"fileNames": [
+				"GLOBAL_DATABASE.sql"
+			]
+		}
+	],
+	"material-icon-theme.folders.customClones": [
+		{
+			"name": "v1-folder",
+			"base": "folder",
+			"color": "#B034ED",
+			"folderNames": [
+				"v1"
+			]
+		},
+		{
+			"name": "v2-folder",
+			"base": "folder",
+			"color": "#EDA034",
+			"folderNames": [
+				"v2"
+			]
+		}
+	],
+	"window.commandCenter": true,
+	"workbench.layoutControl.enabled": false,
+	"chat.commandCenter.enabled": true,
+	"window.menuBarVisibility": "compact",
+	"editor.detectIndentation": false,
+	"editor.insertSpaces": false,
+	"editor.tabSize": 4,
+	"github.copilot.nextEditSuggestions.enabled": false,
+	"chat.agent.maxRequests": 100,
+	"editor.accessibilitySupport": "off",
+	"editor.inlineSuggest.edits.renderSideBySide": "never",
+	"editor.inlineSuggest.edits.allowCodeShifting": "never",
+	"github.copilot.nextEditSuggestions.fixes": false,
+	"workbench.editor.empty.hint": "hidden",
+	"terminal.integrated.defaultProfile.windows": "Git Bash",
+	"git.autofetch": true
+}

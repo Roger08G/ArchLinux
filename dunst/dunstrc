@@ -1,0 +1,91 @@
+###############################################################
+# 🔔 DUNST CONFIGURACIÓN
+# Tema: Nord + estilo Apple (burbujas suaves con blur)
+# Autor: Tu setup Hyprland
+###############################################################
+
+[global]
+# ───────────────────────────────
+# 📍 Posición y dimensiones
+# ───────────────────────────────
+monitor = 0
+follow = mouse
+geometry = "300x80-20+40"      # ancho x alto - desplazamientoX + desplazamientoY
+origin = bottom-right           # notificaciones abajo a la derecha
+transparency = 10               # 0–100
+frame_width = 1
+frame_color = "#88C0D0"
+separator_height = 2
+padding = 10
+horizontal_padding = 16
+text_icon_padding = 8
+icon_position = left
+gap_size = 10
+word_wrap = yes
+
+# ───────────────────────────────
+# 🎨 Estilo visual
+# ───────────────────────────────
+font = Cascadia Code 10
+background = "#2E3440"
+foreground = "#ECEFF4"
+highlight = "#88C0D0"
+separator_color = frame
+
+# ───────────────────────────────
+# 🧊 BLUR (usando Hyprland layer effects)
+# ───────────────────────────────
+# 💡 Dunst por sí solo no hace blur, pero Hyprland puede:
+# Agrega en hyprland.conf:
+# layerrule = blur, dunst
+# layerrule = ignorealpha 0.7, dunst
+#
+# Esto aplica desenfoque y transparencia al fondo de las notificaciones.
+
+# ───────────────────────────────
+# 🕒 Tiempo en pantalla
+# ───────────────────────────────
+idle_threshold = 120
+timeout = 5
+history_length = 20
+
+# ───────────────────────────────
+# 🔉 Sonido (opcional)
+# ───────────────────────────────
+# play_sound = /usr/share/sounds/freedesktop/stereo/message.oga
+
+# ───────────────────────────────
+# 💬 Acciones
+# ───────────────────────────────
+show_age_threshold = 60
+markup = full
+sort = yes
+indicate_hidden = yes
+
+# ───────────────────────────────
+# 🔔 Notificaciones por nivel de urgencia
+# ───────────────────────────────
+[urgency_low]
+background = "#3B4252"
+foreground = "#D8DEE9"
+frame_color = "#81A1C1"
+timeout = 4
+
+[urgency_normal]
+background = "#2E3440"
+foreground = "#ECEFF4"
+frame_color = "#88C0D0"
+timeout = 6
+
+[urgency_critical]
+background = "#BF616A"
+foreground = "#ECEFF4"
+frame_color = "#BF616A"
+timeout = 0
+###############################################################
+# 💡 NOTAS:
+# - Prueba una notificación con:
+#     notify-send "✅ Dunst configurado" "Notificación de prueba"
+# - Puedes reiniciar dunst con:
+#     pkill dunst && dunst &
+###############################################################

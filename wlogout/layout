@@ -1,0 +1,30 @@
+###############################################################
+# 🧱 WLOGOUT CONFIGURACIÓN
+# Tema: Nord / estilo macOS
+###############################################################
+
+# Cada bloque representa un botón del menú
+
+label: lock
+action: swaylock -f
+text: Bloquear
+keybind: l
+icon: system-lock-screen
+
+label: logout
+action: hyprctl dispatch exit
+text: Cerrar sesión
+keybind: e
+icon: system-log-out
+
+label: reboot
+action: systemctl reboot
+text: Reiniciar
+keybind: r
+icon: system-reboot
+
+label: shutdown
+action: systemctl poweroff
+text: Apagar
+keybind: s
+icon: system-shutdown
